@@ -19,16 +19,22 @@ export default function App() {
     }}>
       <View style={{
         backgroundColor: "dodgerblue",
-        // flexBasis: 100, // width or height
-        // flexGrow: 1, // === flex: 1
-        // flexShrink: 1, // === flex: -1
         width: 100,
-        height: 100}}/>
+        height: 100,
+        }}/>
 
       <View style={{
         backgroundColor: "gold",
         width: 100,
-        height: 100}}/>
+        height: 100,
+
+        // position
+        top: 20,
+        // bottom: 20,
+        left: 20,
+        // right:20,
+        position: "absolute", // absolute , static , relative
+        }}/>
 
       <View style={{
         backgroundColor: "tomato",
