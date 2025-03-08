@@ -1,18 +1,3 @@
-import React from 'react';
-// import { StatusBar } from 'expo-status-bar';
-import {
-  Image,
-  ImageBackground,
-  Text,
-  StyleSheet,
-  SafeAreaView,
-  View,
-  ImageBase,
-} from 'react-native';
- 
-const image = {uri: 'https://legacy.reactjs.org/logo-og.png'}
-
-
 export default function App() {
   return (
     <>
@@ -50,9 +35,3 @@ export default function App() {
     </>
   );
 }
-
- const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  }
- });
