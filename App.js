@@ -20,7 +20,7 @@ export default function App() {
       flexDirection: 'row',
       justifyContent: 'space-between',
       marginTop: 40,
-      backgroundColor: '000'
+      backgroundColor: '#000'
     }}>
     <View style={{
       width: 50,
