@@ -1,6 +1,8 @@
 import React from 'react';
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
 
+import colors from '../config/colors';
+
 function WelcomeScreen(props) {
     return (
         <ImageBackground
@@ -22,7 +24,7 @@ function WelcomeScreen(props) {
             alignItems: 'center'
         },
         loginButton: {
-            backgroundColor: '#fc5c65',
+            backgroundColor: colors.primary,
             width: '100%',
             height: 70,
         },
@@ -36,7 +38,7 @@ function WelcomeScreen(props) {
             alignItems: 'center'
         },
         registerButton: {
-            backgroundColor: '#4ecdc4',
+            backgroundColor: colors.secondary,
             width: '100%',
             height: 70,
         }
