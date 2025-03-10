@@ -14,10 +14,12 @@ export default function App() {
       <View style={{
         width: 100,
         height: 100,
-        borderWidth: 10,
-        borderRadius: 50,
-        borderColor: 'royalblue',
+        elevation: 20, // -- android only
+        shadowColor: 'grey', // -- iOS only
+        shadowRadius: 10, // -- iOS only
+        shadowOpacity: 1, // -- iOS only
         backgroundColor: 'dodgerblue',
+        shadowOffset: {width: 10, height: 10}, // -- iOS only
       }}/>
     </View>
   );
