@@ -4,3 +4,19 @@
  // rnss
  //rsf
  // const image = {uri: 'https://legacy.reactjs.org/logo-og.png'}
+
+____________________________________
+            STYLING               | |
+__________________________________|_|
+
+ -- Borders
+ <View style={{
+        width: 300,
+        height: 300,
+        borderWidth: 10,
+        borderRadius: 10,
+        borderTopWidth: 50,
+        borderTopLeftRadius: 50,
+        borderColor: 'royalblue',
+        backgroundColor: 'dodgerblue',
+      }}/>
