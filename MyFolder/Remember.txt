@@ -117,3 +117,24 @@ export default function App() {
     </View>
   );
 }
+
+-- Platform-specific Code
+
+const styles = StyleSheet.create({
+    Text:{
+        color: "tomato",
+        ...Platform.select({
+            ios: {
+                fontSize: 20,
+                fontFamily: "Avenir",
+            },
+            android: {
+                fontSize: 18,
+                fontFamily: "Roboto",
+            }
+        })
+    }
+})
+
+File: AppText.android.js
+File: AppText.ios.js
