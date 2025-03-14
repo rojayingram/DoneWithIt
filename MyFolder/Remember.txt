@@ -87,3 +87,17 @@ __________________________________|_|
       I love React Native! This is my first React native app! Here's some more text.
     </Text>
     </View>
+
+  -- Encapsulating Styles
+  function AppText({children}) {
+    return (
+        <Text styles={styles.Text}>{children}</Text>
+    );
+}
+
+const styles = StyleSheet.create({
+    Text:{
+        fontSize: 18,
+        fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
+    }
+})
