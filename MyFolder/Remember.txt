@@ -138,3 +138,42 @@ const styles = StyleSheet.create({
 
 File: AppText.android.js
 File: AppText.ios.js
+
+-- Organizing Styles
+
+   (folder)~~~> AppText
+    (file)~> AppText.js
+    { /* 
+    import React from 'react';
+    import { Text } from 'react-native';
+
+    import styles from './styles'; 
+
+      function AppText({children}) {
+          return (
+              <Text style={styles.text}>{children}</Text>
+          );
+      }
+
+
+
+        export default AppText;
+    
+    */  }
+
+    (file)~> index.js
+    import AppText from "./components/AppText"
+    export default AppText
+    
+    (file)~> styles.js
+      import { StyleSheet, Platform } from 'react-native'
+
+      const styles = StyleSheet.create({
+      text: {
+          fontSize: 18,
+          fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
+      }
+      })
+
+      export default styles;
+    }
