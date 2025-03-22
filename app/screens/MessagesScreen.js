@@ -1,7 +1,8 @@
 import React from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, StyleSheet } from 'react-native';
 
 import ListItem from '../components/ListItem';
+import Screen from '../components/Screen';
 
 const messages = [
     {
@@ -21,6 +22,7 @@ const messages = [
 
 function MessagesScreen(props) {
     return (
+        <Screen>
         <FlatList
             data={messages}
             keyExtractor={message => message.id} // .toString is generating an error
@@ -30,7 +32,12 @@ function MessagesScreen(props) {
             image={item.image}
             />}
         />
+        </Screen>
     );
 }
+
+const styles = StyleSheet.create({
+    
+})
 
 export default MessagesScreen;

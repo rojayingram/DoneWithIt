@@ -19,7 +19,6 @@ function ViewImageScreen(props) {
             source={require('../assets/chair.jpg')}
             />
         </View>
-        
     );
 }
 
