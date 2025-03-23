@@ -29,9 +29,10 @@ function MessagesScreen(props) {
             keyExtractor={message => message.id} // .toString is generating an error
             renderItem={({ item }) =>
             <ListItem 
+            image={item.image}
             title={item.title}
             subTitle={item.description}
-            image={item.image}
+            onPress={()=>console.log("Message selected", item)}
             />}
             ItemSeparatorComponent={<ListItemSeparator />}
         />
