@@ -1,15 +1,19 @@
 import React from 'react';
-
 import { Image, StyleSheet, TouchableHighlight, View, } from 'react-native';
+//import ReanimatedSwipeable from 'react-native-gesture-handler/ReanimatedSwipeable';
+
 import AppText from './AppText';
 import colors from '../config/colors';
 
-function ListItem({image, title, subTitle, onPress}) {
+function ListItem({image, title, subTitle, onPress, onLongPress}) {
 
     return (
+        
         <TouchableHighlight
         underlayColor={colors.light}
-        onPress={onPress}>
+        onPress={onPress}
+        onLongPress={onLongPress}
+        >
             <View style={styles.container}>
                 <Image style={styles.image} source={image}/>
                 <View>
@@ -18,6 +22,7 @@ function ListItem({image, title, subTitle, onPress}) {
                 </View>
             </View>
         </TouchableHighlight>
+       
     );
 }
 
