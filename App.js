@@ -11,40 +11,11 @@ import Screen from './app/components/Screen';
 import Icon from './app/components/Icon';
 import ListItem from './app/components/ListItem';
 import PageHeading from './app/components/PageHeading';
+import AccountScreen from './app/screens/AccountScreen';
 
 
 export default function App() {
   return (
-    <Screen>
-      
-      <PageHeading
-      pageTile="ListItem Component"
-      pageSubTitle="12- Extending the ListItem Component"
-      />
-
-      <ListItem
-      title="My title"
-      subTitle="My subtitle"
-      />
-
-      <ListItem
-      image={ require('./app/assets/rojay.png') }
-      title="My title"
-      subTitle="My subtitle"
-      />
-
-      <ListItem
-      title="My title"
-      subTitle="My subtitle"
-      IconComponent={ <Icon name="email" /> }
-      />
-
-      <ListItem
-      title="My title"
-      // subTitle="My subtitle"
-      IconComponent={ <Icon name="email" /> }
-      />
-      
-    </Screen>
+    <AccountScreen />
   );
 }
