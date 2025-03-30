@@ -13,6 +13,7 @@ import ListItem from './app/components/ListItem';
 import PageHeading from './app/components/PageHeading';
 import AccountScreen from './app/screens/AccountScreen';
 import ListingsScreen from './app/screens/ListingsScreen';
+import AppTextInput from './app/components/AppTextInput';
 
 
 
@@ -21,7 +22,8 @@ export default function App() {
 
   return (
     <Screen>
-      <Text>{firstName}</Text>
+      <AppTextInput placeholder="Username" icon="email"/>
+      {/* <Text>{firstName}</Text>
 
       <TextInput 
         maxLength={4}
@@ -36,7 +38,7 @@ export default function App() {
             borderBottomWidth: 1,
           }
         }
-        />
+        /> */}
       </Screen>
   );
 }
